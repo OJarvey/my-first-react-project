@@ -3,8 +3,8 @@
   # Directory where the build command is run
   base = "."
   
-  # Build command
-  command = "npm run build"
+  # Build command - install dependencies first, then build
+  command = "npm ci && npm run build"
   
   # Directory that contains the deploy-ready HTML files and assets
   publish = "build"
