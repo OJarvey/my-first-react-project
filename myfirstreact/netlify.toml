@@ -1,0 +1,15 @@
+[build]
+  # Directory where the build command is run
+  base = "."
+  
+  # Build command
+  command = "npm run build"
+  
+  # Directory that contains the deploy-ready HTML files and assets
+  publish = "build"
+
+# Redirect all traffic to index.html for client-side routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
