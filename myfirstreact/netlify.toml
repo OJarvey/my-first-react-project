@@ -1,3 +1,4 @@
+# Netlify configuration for React app deployment
 [build]
   # Directory where the build command is run
   base = "."
@@ -9,6 +10,7 @@
   publish = "build"
 
 # Redirect all traffic to index.html for client-side routing
+# This ensures React Router works correctly on page refresh
 [[redirects]]
   from = "/*"
   to = "/index.html"
