@@ -1,10 +1,10 @@
 # Netlify configuration for React app deployment
 [build]
   # Directory where the build command is run
-  base = "."
+  base = "myfirstreact"
   
   # Build command - install dependencies first, then build
-  command = "npm ci && npm run build"
+  command = "npm install && npm run build"
   
   # Directory that contains the deploy-ready HTML files and assets
   publish = "build"
